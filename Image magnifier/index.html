@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Image Magnifier Plugin Demo</title>
+	<link rel="stylesheet" href="idd-zoom.css">
+	<style>
+		.idd-zoom {
+			width:600px;
+			margin:0 auto;
+		}
+		.idd-zoom img {
+			width:100%;
+		}
+	</style>
+
+</head>
+<body>
+<!-- <h1 style="margin:150px auto; text-align:center">jQuery Image Magnifier Plugin Demo</h1> -->
+	<div class="idd-zoom">
+		<img src="IMG_20150312_215612138.jpg"/>
+	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.js"></script>
+	<script src="idd-zoom.js"></script>
+    <script>
+var mp = new magpic('.idd-zoom', {
+			magnifierImage: 'IMG_20150312_215612138.jpg'
+			, magnifierSize: 250
+			, fadeDuration: 400
+			, enabled: false
+			//, initialPosition: [495,330]
+		});
+</script>
+
+</body>
+</html>
